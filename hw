@@ -1,0 +1,97 @@
+#include <stdio.h>
+ // question 
+int main()
+{
+  
+
+                    // write a program to check if a number is diviible by 2 or not
+                                            {
+                                                
+                                                
+                                                    int a;
+
+                                                        printf("enter the number : ");
+                                                            scanf("%d",&a);         // we have to complusory put &
+
+                                                                printf("%d \n", a%2 == 0);
+                                                    
+                                                
+                                            }   
+
+
+                    // to check the number is odd or even
+                                          {
+                                              
+                                                        // even -->1
+                                                        // odd --> 0
+                                                        // same as above one 
+                                             
+                                            
+                                          }
+
+                // write a program to average of 3 no.
+                                                {
+                                                    float a;
+                                                    float b;
+                                                    float c;
+                                                    float d;
+                                                        printf("enter a no. a : \n",a);
+                                                            scanf("%f", &a);
+                                                        printf("enter a no. b : \n",b);
+                                                            scanf("%f", &b);
+                                                        printf("enter a no. c : \n",c);
+                                                            scanf("%f", &c);
+
+                                                    d = (a + b + c) / 3;
+
+                                                        printf("the average of three no. is  : %f \n", d);
+                                                    
+    
+    
+                                                }
+
+                    // to check the if a charc is digit or not 
+                                                    {
+                                                        char ch;
+                                                                printf("Enter a character: ");
+                                                                    scanf("%c", &ch);
+
+                                                        if (ch >= '0' && ch <= '9')
+                                                            {
+                                                                    printf("%c is a digit.\n", ch);
+                                                            }
+                                                        else
+                                                        {
+                                                                printf("%c is not a digit.\n", ch);
+                                                        }
+
+                                                        
+                                                    }
+
+                                                    {
+                                                        int num1, num2, smallest;
+
+                        // Input two numbers from the user
+                                                
+                                                                printf("Enter two numbers: ");
+                                                                    scanf("%d %d", &num1, &num2);
+
+                        // Determine the smallest number
+                                                
+                                                        if (num1 < num2) 
+                                                                {
+                                                                          smallest = num1;
+                                                                }
+                                                        else 
+                                                                {
+                                                            smallest = num2;
+                                                                }
+
+                        // Print the smallest number
+                                                        
+                                                                printf("The smallest number is: %d \n", smallest);
+
+                                                        
+                                                    }
+                return 0;
+}
