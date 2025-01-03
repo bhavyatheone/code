@@ -1,0 +1,167 @@
+// to calculate simple interest
+/*
+#include <stdio.h>
+int main()
+{
+    float p,r,t,i;
+    p=100;  r= 12 ; t=2;
+    i = (p*r*t)/100.0;
+    printf("%0.01f",i);
+    return 0;
+}*/
+
+// PROGRAM TO READ MARKS OF FIVE SUBJECT OF A STUDENT AND CALCULATE TOTAL
+// AND PERCENTAGE.
+/*
+#include <stdio.h>
+int main()
+{
+    int e,s,m,S,h;
+    printf("enter the marks of subjects: ");
+    scanf("%d %d %d %d %d",&e,&s,&m,&S,&h);
+    float total = e+s+m+S+h;
+    float percentage = (total/500.0)*100.0;
+    printf("hence total is : %0.01f \n",total);
+    printf("hence percentage is : %0.01f \n",percentage);
+    return 0;
+}*/
+
+// PROGRAM TO SWAP TOW VARIABLES USING THIRD VARIABLE
+/*
+#include <stdio.h>
+int main() {
+    int a, b, temp;
+                                     // Input values for a and b
+    printf("Enter the value of a: ");
+    scanf("%d", &a);
+    printf("Enter the value of b: ");
+    scanf("%d", &b);
+
+                                     // Display original values
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+
+                                     // Swap the values using a third variable
+    temp = a;
+    a = b;
+    b = temp;
+
+                                     // Display swapped values
+    printf("After swapping: a = %d, b = %d\n", a, b);
+
+    return 0;
+}*/
+
+// PROGRAM TO SWAP TWO VARIABLES WITHOUT USING THIRD VARIABLE.
+/*
+#include <stdio.h>
+int main() {
+    int a, b;                       // Input values for a and b
+    printf("Enter the value of a: ");
+    scanf("%d", &a);
+    printf("Enter the value of b: ");
+    scanf("%d", &b);
+
+                                    // Display original values
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+
+                                    // Swap the values without using a third variable
+    a = a + b;
+    b = a - b;
+    a = a - b;
+                                    // Display swapped values
+    printf("After swapping: a = %d, b = %d\n", a, b);
+
+    return 0;
+}*/
+
+// PROGRAM TO CALCULATE AREA OF A TRIANGLE
+/*
+#include <stdio.h>
+int main()
+{
+    int b,h,area;
+        printf("enter the value of base :");
+                scanf("%d",&b);
+        printf("enter the value of height:");
+                scanf("%d",&h);
+    area = 0.5*b*h;
+    printf("the area of triangle is %d",area);
+    return 0;
+}*/
+
+/*
+EARTH TAKES A PERIOD OF REVOLUTION OF 31558150 SECONDS .WRITE A C
+PROGRAM TO CONVERT THIS INTO NUMBER OF DAY,HOURS AND MINUTES
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    float a = 31558150;
+    float days, hours, minutes;
+
+    minutes = a / 60.0;
+    printf("the value in minutes is %f\n", minutes);
+
+    hours = minutes / 60.0;
+    printf("the value in hours is %f\n", hours);
+
+    days = hours / 24.0;
+    printf("the value in days is %f\n", days);
+
+    return 0;
+}*/
+/*
+PROGRAM TO READ TIME IN HR,MIN,SEC AND CONVERT IT INTO TOTAL SECOND 
+*/
+/*
+#include <stdio.h>
+
+int main() {
+    int hours, minutes, seconds, total_seconds;
+
+    // Input hours, minutes, and seconds
+    printf("Enter hours: ");
+    scanf("%d", &hours);
+    printf("Enter minutes: ");
+    scanf("%d", &minutes);
+    printf("Enter seconds: ");
+    scanf("%d", &seconds);
+
+    // Convert time to total seconds
+    total_seconds = (hours * 3600) + (minutes * 60) + seconds;
+
+    // Output the total seconds
+    printf("Total seconds = %d\n", total_seconds);
+
+    return 0;
+}
+*/
+
+/*
+WRITE A C PROGRAM TO CALCULATE THE CUT OFF MARK OF A STUDENT USING THE
+FORMULA.
+CM = M/2+P/2+C/2+E
+WHERE CM = Cut of f mark
+M = Marks in Mathematics out of 200
+P = Marks in Physics out of 200
+C = Marks in Chemistry out of 200
+E = Marks in entrance examination out of 100
+*/
+#include <stdio.h>
+int main()
+{
+    float m,p,e,c;
+    
+    c = ((m/2)+(p/2)+(c+2)+e);
+    printf("enter the marks of in math :");
+    scanf("%f",&m);
+    printf("enter the marks of physics :");
+    scanf("%f",&p);
+    printf("enter the marks of chemisrty:");
+    scanf("%f",&c);
+    printf("enter the marks of entrance:");
+    scanf("%f",&e);
+    printf("the cut of marks is %0.01f",c);
+    return 0; 
+}
