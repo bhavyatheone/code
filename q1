@@ -1,0 +1,39 @@
+/* Write a program to enter the numbers till the user wants and
+    at the end it should display the count of positive, negative
+    and zeros entered.*/
+
+
+#include <stdio.h>
+int main()
+{
+     int num, positiveCount = 0, negativeCount = 0, zeroCount = 0;
+    char choice;
+
+    do
+    {
+        printf("Enter a number: ");
+        scanf("%d", &num);
+
+        if (num > 0)
+        {
+            positiveCount++;
+        }
+        else if (num < 0)
+        {
+            negativeCount++;
+        }
+        else
+        {
+            zeroCount++;
+        }
+
+        printf("Do you want to enter another number? (y/n): ");
+        scanf(" %c", &choice);
+    }
+    while (choice == 'y' || choice == 'Y');
+
+    printf("\nCount of positive numbers: %d", positiveCount);
+    printf("\nCount of negative numbers: %d", negativeCount);
+    printf("\nCount of zeros: %d\n", zeroCount);
+return 0;
+}
